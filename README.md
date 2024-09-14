@@ -1,5 +1,5 @@
 # Interactive-system-for-image-and-text-retrieval
-首先展示代码概览：
+首先展示代码概览：详细功能请转接到https://drive.google.com/file/d/1C2jA9IxW0sGNrvOfLIJZrPgGXdVdjw7y/view?usp=sharing
 
 ![code overview](https://github.com/user-attachments/assets/f5cdda02-4ae9-4845-ac30-975a1572478d)
 
