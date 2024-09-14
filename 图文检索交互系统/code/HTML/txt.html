@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8">
+    <title>我的网页 - HTMLPAGE.CN</title>
+    <link rel="shortcut icon" href="https://htmlpage.cn/favicon.png">
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+
+    <body>
+      <div class="row">
+        <div id="iod6" class="cell c2224">
+          <div id="i93z" class="c2407">以文搜图</div>
+             <div id="i5kdo" class="c5080">第<span id="User_num">{{ user_ID_txt }}</span>个用户第<span id="exp_num">{{ index_exp_txt }}</span>组实验</div>
+          <div class="row" id="if0t3">
+            <div class="cell">
+              <div class="row c3885">
+              </div>
+            </div>
+          </div>
+          <div class="row search">
+            <div id="i4p9d" class="cell c21100">
+                <input type="text" id="i2asx" class="c5867" placeholder="{{ caption_value }}">
+            </div>
+            <div id="i6do1" class="cell c21091">
+              <button id="ilecs" name="search" class="c6001">搜索</button>
+            </div>
+          </div>
+              <div class="row c3885">
+                <div class="cell i2msj" id="">
+                  <div id="isejm" class="c4508">目标图片</div>
+					<div class="trg-img">
+					<img name="trg-img" src={{ target_value }} class="c10351" />
+					</div>
+                </div>
+              </div>
+        </div>
+        <div id="i17u" class="cell c2233">
+          <div id="ivnuc" class="c11719">搜索结果</div>
+          <div class="container">
+          <div class="row " id="i0u7g">
+            <div class="cell" id="i0wyi">
+              <div class="row" id="i3vry">
+                <div class="cell imgs_cell">
+                  <div class="row" id="i1tnk">
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                  </div>
+                  <div class="row" id="i0v24">
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                    <div class="cell"><img src="../static/默认图片.png" class="c10352" /></div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+            </div>
+          <div class="row" id="i0crp">
+            <div class="cell" id="itb89">
+              <button id="iiseo" class="c11962">符合目标图片按钮(Yes)</button>
+            </div>
+            <div class="cell" id="imtxz">
+              <button id="i8u3z" class="c12054">跳过本轮实验(Next)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+  <script>
+
+ //图片选中效
+ const container = document.querySelector(".container");
+ let activeImage;
+container.addEventListener("mousedown", function(event) {
+  // 检查点击的元素是否是img标签
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+    if (activeImage === event.target) { // 如果再次点击了已经激活的图片
+      activeImage.classList.remove("active"); // 取消“active”类
+      activeImage = null; // 清空活动图片变量
+    } else {
+      if (activeImage) { // 如果已有激活的图片
+        activeImage.classList.remove("active"); // 取消“active”类
+      }
+      activeImage = event.target;
+      activeImage.classList.add("active");
+    }
+  }
+});
+
+// 获取搜索按钮元素
+const searchBtn = document.getElementById("ilecs");
+// 获取输入框元素
+const inputBox = document.getElementById("i2asx");
+if(inputBox.value === ''){
+    inputBox.value = inputBox.placeholder
+}
+// 获取要替换的目标图片元素，即8张图片的父元素
+const images = document.querySelectorAll('#i0u7g img');
+searchBtn.addEventListener("click", () => {
+  // 获取输入框文本和参考图片的URL
+  const searchText = inputBox.value;
+  // 发送POST请求到后端，带上搜索文本和参考图片的URL
+  fetch("/searchT", {
+    method: "POST",
+    body: JSON.stringify({ searchText: searchText }),
+    headers: { "Content-Type": "application/json" },
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      // 打印返回的 JSON 数据
+      console.log('图片',data);
+      // 替换目标图片
+      const imgUrls = data.imgUrls;
+      const round_num_txt = data.round_num_txt
+    for (let i = 0; i < images.length; i++) {
+      images[i].src = imgUrls.result[i];
+    }
+    if( round_num_txt == 3)
+          NextBtn.style.backgroundColor = "#89d862"
+    if (round_num_txt == 1)
+          NextBtn.style.backgroundColor = "#808080"
+    })
+    .catch((error) => {
+      console.error("发生了错误：", error);
+    });
+});
+//符合目标图片按钮实现
+const matchBtn = document.getElementById("iiseo");
+const imgs = document.querySelectorAll('.c10352');
+matchBtn.addEventListener("click", () => {
+  // 获取有active类的图片元素
+  const activeImage = document.querySelector(".active");
+  const target_Image = document.querySelector(".trg-img img").src;
+  const search_text = inputBox.value;
+  if (activeImage) { // 如果存在活动图片
+    const candidate_success = activeImage.src; // 获取活动图片的URL
+
+    // 发送POST请求到后端，将URL发送给Flask应用
+    fetch("/matchT", {
+      method: "POST",
+      body: JSON.stringify({ target_Image: target_Image , candidate_success: candidate_success, search_text: search_text}),
+      headers: { "Content-Type": "application/json" },
+    })
+      .then((response) => response.json())
+      .then(data => {console.log(data)// 打印返回的JSON数据
+        document.getElementById('exp_num').textContent = data.index_exp_txt;
+        document.querySelector('.c5867').value = data.caption_value;
+        document.querySelector('.c10351').src = data.target_value;
+        const round_num_txt = data.round_num_txt;
+        imgs.forEach(img => {
+            img.src = "../static/默认图片.png";
+        });
+        const activeImage = document.querySelector(".active");
+             if (activeImage) {
+                activeImage.classList.remove('active'); // 取消“active”类
+        }
+        if (round_num_txt == 1)
+          NextBtn.style.backgroundColor = "#808080"
+      })
+      .catch((error) => {
+        console.error("发生了错误：", error);
+      });
+  }
+});
+// 实现跳过本轮实验
+const NextBtn = document.getElementById("i8u3z");
+const target_Image = document.querySelector(".trg-img img").src;
+const search_text = inputBox.value;
+NextBtn.addEventListener("click", () => {
+     fetch("/Next_exp_txt", {
+      method: "POST",
+      body: JSON.stringify({ target_Image:target_Image, search_text:search_text}),
+      headers: { "Content-Type": "application/json" },
+    })
+    .then((response) => response.json())
+    .then(data => {console.log(data)// 打印返回的JSON数据
+     if (data){
+         document.getElementById('exp_num').textContent = data.index_exp_txt;
+         document.querySelector('.c5867').value = data.caption_value;
+         document.querySelector('.c10351').src = data.target_value;
+         const round_num_txt = data.round_num_txt;
+         imgs.forEach(img => {
+             img.src = "../static/默认图片.png";
+            });
+         const activeImage = document.querySelector(".active");
+         if (activeImage) {
+             activeImage.classList.remove('active'); // 取消“active”类
+            }
+         if (round_num_txt == 1)
+             NextBtn.style.backgroundColor = "#808080"
+          }
+     else{
+         console.log("data is empty!")
+     }
+    })
+      .catch((error) => {
+        console.error("发生了错误：", error);
+      });
+
+    })
+  </script>
+  <html>

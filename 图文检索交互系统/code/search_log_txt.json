@@ -1,0 +1,187 @@
+{
+  "2": {
+    "1": {
+      "initial_data_txt": {
+        "start_time": "2024-09-14 20:05:12",
+        "target": "B0037OJRTQ.jpg",
+        "text": "为浅黄色"
+      },
+      "search_log_txt": {
+        "1": {
+          "result": [
+            "B003VQS9VC.jpg",
+            "B007JBFJ4K.jpg",
+            "B00FDV30N0.jpg",
+            "B00FJ58X6E.jpg",
+            "B003SSSX5A.jpg",
+            "B00ALLOVAI.jpg",
+            "B004I7M21G.jpg",
+            "B00FEF5M54.jpg",
+            "B004I3YHUY.jpg"
+          ],
+          "search_time": "2024-09-14 20:03:34",
+          "text": "是长袖黑色T恤"
+        },
+        "2": {
+          "result": [
+            "B005G5XAP6.jpg",
+            "B00BX8BBTW.jpg",
+            "B00GGZV5K2.jpg",
+            "B002TAJN4I.jpg",
+            "B003VRZ5NG.jpg",
+            "B004U434VO.jpg",
+            "B001CXQLX4.jpg",
+            "B007W2X61E.jpg",
+            "B003R6TGAO.jpg"
+          ],
+          "search_time": "2024-09-14 20:05:34",
+          "text": "为酒红色长袖体恤立领"
+        },
+        "3": {
+          "result": [
+            "B000XTANPK.jpg",
+            "B007C2QBA2.jpg",
+            "B007EX7B76.jpg",
+            "B007X49HQE.jpg",
+            "B00GK4H0VW.jpg",
+            "B001TK544C.jpg",
+            "B002W8I5AA.jpg",
+            "B0036XJHPM.jpg",
+            "B0036XODB0.jpg"
+          ],
+          "search_time": "2024-09-14 20:02:01",
+          "text": "颜色为红色并系纽扣"
+        }
+      },
+      "end_data_txt": {
+        "targetImage_fail": "B0037OJRTQ.jpg",
+        "search_text": "为浅黄色",
+        "fail_time": "2024-09-14 20:05:38"
+      }
+    }
+  },
+  "4": {
+    "2": {
+      "initial_data_txt": {
+        "start_time": "2024-09-14 20:03:05",
+        "target": "B0037OJRTQ.jpg",
+        "text": "颜色为红色并系纽扣"
+      },
+      "search_log_txt": {
+        "1": {
+          "result": [
+            "B0059DKG0M.jpg",
+            "B002O0KURC.jpg",
+            "B007POM1PG.jpg",
+            "B0096A37SW.jpg",
+            "B005P2289Y.jpg",
+            "B006K4LG7G.jpg",
+            "B0060NYVU6.jpg",
+            "B00A7Y917C.jpg",
+            "B000GOSLKG.jpg"
+          ],
+          "search_time": "2024-09-14 20:03:14",
+          "text": "袖子更长，纽扣格子"
+        },
+        "2": {
+          "result": [
+            "B002O0KURC.jpg",
+            "B0059DKG0M.jpg",
+            "B004DMTN1S.jpg",
+            "B0060NYVU6.jpg",
+            "B0096A37SW.jpg",
+            "B003OYJNBQ.jpg",
+            "B001D50H04.jpg",
+            "B005SW2MII.jpg",
+            "B007POM1PG.jpg"
+          ],
+          "search_time": "2024-09-14 20:03:26",
+          "text": "袖子更长，纽扣格子、黑色"
+        },
+        "3": {
+          "result": [
+            "B000XTANPK.jpg",
+            "B007C2QBA2.jpg",
+            "B007EX7B76.jpg",
+            "B007X49HQE.jpg",
+            "B00GK4H0VW.jpg",
+            "B001TK544C.jpg",
+            "B002W8I5AA.jpg",
+            "B0036XJHPM.jpg",
+            "B0036XODB0.jpg"
+          ],
+          "search_time": "2024-09-14 20:02:01",
+          "text": "颜色为红色并系纽扣"
+        }
+      },
+      "end_data_txt": {
+        "target_Image": "B00639ED32.jpg",
+        "candidate_success": "B004DMTN1S.jpg",
+        "search_text": "袖子更长，纽扣格子、黑色",
+        "success_time": "2024-09-14 20:03:31"
+      }
+    }
+  },
+  "5": {
+    "2": {
+      "initial_data_txt": {
+        "start_time": "2024-09-14 20:05:12",
+        "target": "B0037OJRTQ.jpg",
+        "text": "为浅黄色"
+      },
+      "search_log_txt": {
+        "1": {
+          "result": [
+            "B007RMMYHQ.jpg",
+            "B006MYVJVC.jpg",
+            "B0073NSJ4Q.jpg",
+            "B00B2YOFOU.jpg",
+            "B00GUQOCLQ.jpg",
+            "B00EYDNSHG.jpg",
+            "B007RMN0XI.jpg",
+            "B00C3X884C.jpg",
+            "B003XJJBCI.jpg"
+          ],
+          "search_time": "2024-09-14 20:05:42",
+          "text": "长袖且图案化"
+        },
+        "2": {
+          "result": [
+            "B002O0KURC.jpg",
+            "B008LBQMBQ.jpg",
+            "B003OYJNBQ.jpg",
+            "B003NUSAVU.jpg",
+            "B00AG3Z04W.jpg",
+            "B0049GYHEG.jpg",
+            "B004460GZU.jpg",
+            "B002QGUKG0.jpg",
+            "B003TJAHNY.jpg"
+          ],
+          "search_time": "2024-09-14 20:05:52",
+          "text": "长袖且图案化、黑色格子衫"
+        },
+        "3": {
+          "result": [
+            "B000XTANPK.jpg",
+            "B007C2QBA2.jpg",
+            "B007EX7B76.jpg",
+            "B007X49HQE.jpg",
+            "B00GK4H0VW.jpg",
+            "B001TK544C.jpg",
+            "B002W8I5AA.jpg",
+            "B0036XJHPM.jpg",
+            "B0036XODB0.jpg"
+          ],
+          "search_time": "2024-09-14 20:02:01",
+          "text": "颜色为红色并系纽扣"
+        }
+      },
+      "end_data_txt": {
+        "target_Image": "B00639ED32.jpg",
+        "candidate_success": "B003OYJNBQ.jpg",
+        "search_text": "长袖且图案化、黑色格子衫",
+        "success_time": "2024-09-14 20:06:02"
+      }
+    }
+  }
+}

@@ -1,0 +1,539 @@
+{
+  "2": {
+    "1": {
+      "initial_data": {
+        "candidate": "B00383INJQ.jpg",
+        "start_time": "2024-09-14 20:06:59",
+        "target": "B0037OJRTQ.jpg",
+        "text": "为浅黄色"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B004YO8QCC.jpg",
+          "result": [
+            "B0048KX9QU.jpg",
+            "B0048KTTLY.jpg",
+            "B004YO9P9K.jpg",
+            "B0081D7EQQ.jpg",
+            "B009AVTESY.jpg",
+            "B006VS7X5U.jpg",
+            "B00EVBITCU.jpg",
+            "B00914W4Z0.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:54"
+        },
+        "2": {
+          "candidate": "B00383INJQ.jpg",
+          "result": [
+            "B009PNSAP0.jpg",
+            "B00F63UTBG.jpg",
+            "B000A38F36.jpg",
+            "B003R6TGAO.jpg",
+            "B0044DEB1S.jpg",
+            "B005P7J0B8.jpg",
+            "B0046ZEVOG.jpg",
+            "B000KGMHFU.jpg",
+            "B000KGI9NY.jpg"
+          ],
+          "search_time": "2024-09-14 20:07:18",
+          "text": "酒红色长袖立领纯色"
+        },
+        "3": {
+          "candidate": "B000A38F36.jpg",
+          "result": [
+            "B00AQ5DC5Y.jpg",
+            "B00BX8BBTW.jpg",
+            "B00DC845AS.jpg",
+            "B003VYCRLW.jpg",
+            "B0044XHU48.jpg",
+            "B00CJ0CUG6.jpg",
+            "B007HYYE8Q.jpg",
+            "B00FXLCVD0.jpg"
+          ],
+          "search_time": "2024-09-14 20:07:29",
+          "text": "酒红色"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "reference_Image": "B000A38F36.jpg",
+        "candidate_success": "B0044XHU48.jpg",
+        "search_text": "酒红色",
+        "success_time": "2024-09-14 20:07:36"
+      }
+    },
+    "2": {
+      "initial_data": {
+        "candidate": "B00BGLZK2K",
+        "satrt_time": "2024-09-14 20:07:36",
+        "target": "B00639ED32",
+        "text": "长袖且图案化"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B00BGLZK2K.jpg",
+          "result": [
+            "B005TBAZEG.jpg",
+            "B007JQKPXA.jpg",
+            "B0009SU9R2.jpg",
+            "B003RW46LW.jpg",
+            "B003RWHBDM.jpg",
+            "B000G0GTP4.jpg",
+            "B00EVGVD7I.jpg",
+            "B007TB3RZS.jpg"
+          ],
+          "search_time": "2024-09-14 20:07:49",
+          "text": "没有图案的黑色格子衫"
+        },
+        "2": {
+          "candidate": "B005TBAZEG.jpg",
+          "result": [
+            "B005TBACUI.jpg",
+            "B000MYC2YG.jpg",
+            "B003VH8CR2.jpg",
+            "B00BJL7L38.jpg",
+            "B00A3IAZRW.jpg",
+            "B0009SU9R2.jpg",
+            "B00A5H6XCW.jpg",
+            "B00AIY2R9U.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:04",
+          "text": "黑色格子衫"
+        },
+        "3": {
+          "candidate": "B00AIY2R9U.jpg",
+          "result": [
+            "B006L13TV4.jpg",
+            "B005TBAZEG.jpg",
+            "B004E0Z2Y6.jpg",
+            "B0095FMBS0.jpg",
+            "B005GIWPYA.jpg",
+            "B004O0TJPY.jpg",
+            "B007P52ZHY.jpg",
+            "B00AIYCW8Q.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:15",
+          "text": "黑色"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "referenceImage_fail": "B00383INJQ.jpg",
+        "targetImage_fail": "B0037OJRTQ.jpg",
+        "search_text": "为浅黄色",
+        "fail_time": "2024-09-14 20:08:18"
+      }
+    },
+    "3": {
+      "initial_data": {
+        "candidate": "B00BGLZK2K",
+        "satrt_time": "2024-09-14 20:07:36",
+        "target": "B00639ED32",
+        "text": "长袖且图案化"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B004YO8QCC.jpg",
+          "result": [
+            "B0081D7EQQ.jpg",
+            "B0048KTTLY.jpg",
+            "B004YO9P9K.jpg",
+            "B00914W4Z0.jpg",
+            "B009AVTESY.jpg",
+            "B006VS7X5U.jpg",
+            "B00AZNVSVC.jpg",
+            "B008OM35JE.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:31",
+          "text": "袖子更长、没有图案"
+        },
+        "2": {
+          "candidate": "B00AZNVSVC.jpg",
+          "result": [
+            "B0081D7EQQ.jpg",
+            "B00914W4Z0.jpg",
+            "B007JWM08W.jpg",
+            "B00AZNRCGW.jpg",
+            "B008OM35JE.jpg",
+            "B009VBXOV6.jpg",
+            "B0048KTTLY.jpg",
+            "B0099NNNGM.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:43",
+          "text": "袖子更长、没有图案"
+        },
+        "3": {
+          "candidate": "B00AZNVSVC.jpg",
+          "result": [
+            "B0048KTTLY.jpg",
+            "B0081D7EQQ.jpg",
+            "B007JWM08W.jpg",
+            "B004YO9P9K.jpg",
+            "B007U1U0WK.jpg",
+            "B0081D7IXK.jpg",
+            "B00914W4Z0.jpg",
+            "B00C1ES730.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:56",
+          "text": "没有英文图案"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "referenceImage_fail": "B00383INJQ.jpg",
+        "targetImage_fail": "B0037OJRTQ.jpg",
+        "search_text": "为浅黄色",
+        "fail_time": "2024-09-14 20:08:59"
+      }
+    },
+    "4": {
+      "initial_data": {
+        "candidate": "B00BGLZK2K",
+        "satrt_time": "2024-09-14 20:07:36",
+        "target": "B00639ED32",
+        "text": "长袖且图案化"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B000JIPI5U.jpg",
+          "result": [
+            "B00FAQ0O5A.jpg",
+            "B00BJO34NG.jpg",
+            "B00F3J0SE6.jpg",
+            "B002N8P7MI.jpg",
+            "B003T9VU7G.jpg",
+            "B005KN1LL4.jpg",
+            "B008R50SZM.jpg",
+            "B007PIYT8O.jpg",
+            "B004L7GNTK.jpg"
+          ],
+          "search_time": "2024-09-14 20:09:02",
+          "text": "是紫色"
+        },
+        "2": {
+          "candidate": "B00F3J0SE6.jpg",
+          "result": [
+            "B0045889NS.jpg",
+            "B000VZMC1E.jpg",
+            "B006X9LAI8.jpg",
+            "B002N8P7MI.jpg",
+            "B005KN1LL4.jpg",
+            "B005KN1GNM.jpg",
+            "B003ZU55K2.jpg",
+            "B00CAI8AJI.jpg"
+          ],
+          "search_time": "2024-09-14 20:09:16",
+          "text": "颜色更深一点"
+        },
+        "3": {
+          "candidate": "B00AZNVSVC.jpg",
+          "result": [
+            "B0048KTTLY.jpg",
+            "B0081D7EQQ.jpg",
+            "B007JWM08W.jpg",
+            "B004YO9P9K.jpg",
+            "B007U1U0WK.jpg",
+            "B0081D7IXK.jpg",
+            "B00914W4Z0.jpg",
+            "B00C1ES730.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:56",
+          "text": "没有英文图案"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "reference_Image": "B002N8P7MI.jpg",
+        "candidate_success": "B002N8P7MI.jpg",
+        "search_text": "颜色更深一点",
+        "success_time": "2024-09-14 20:09:22"
+      }
+    },
+    "5": {
+      "initial_data": {
+        "candidate": "B00CGSITX4",
+        "satrt_time": "2024-09-14 20:09:22",
+        "target": "B008J83O62",
+        "text": "不太正式，纽扣更少"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B00CGSITX4.jpg",
+          "result": [
+            "B004I6EAPS.jpg",
+            "B0058YIYM4.jpg",
+            "B00CX6DI7G.jpg",
+            "B0077L58GQ.jpg",
+            "B006UQMPKQ.jpg",
+            "B008X859KW.jpg",
+            "B0013THNAW.jpg",
+            "B00AKR3TSI.jpg"
+          ],
+          "search_time": "2024-09-14 20:09:30",
+          "text": "不太正式，纽扣更少"
+        },
+        "2": {
+          "candidate": "B0058YIYM4.jpg",
+          "result": [
+            "B006RDOWRQ.jpg",
+            "B0037VYQGS.jpg",
+            "B004R1G55M.jpg",
+            "B002KCNYRM.jpg",
+            "B0012PUNRW.jpg",
+            "B00AKR3TSI.jpg",
+            "B0083F2M5K.jpg",
+            "B001H0F2ZA.jpg"
+          ],
+          "search_time": "2024-09-14 20:09:50",
+          "text": "没有logo"
+        },
+        "3": {
+          "candidate": "B00AZNVSVC.jpg",
+          "result": [
+            "B0048KTTLY.jpg",
+            "B0081D7EQQ.jpg",
+            "B007JWM08W.jpg",
+            "B004YO9P9K.jpg",
+            "B007U1U0WK.jpg",
+            "B0081D7IXK.jpg",
+            "B00914W4Z0.jpg",
+            "B00C1ES730.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:56",
+          "text": "没有英文图案"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "reference_Image": "B0058YIYM4.jpg",
+        "candidate_success": "B002KCNYRM.jpg",
+        "search_text": "没有logo",
+        "success_time": "2024-09-14 20:09:58"
+      }
+    },
+    "6": {
+      "initial_data": {
+        "candidate": "B0036SQCKK",
+        "satrt_time": "2024-09-14 20:09:58",
+        "target": "B003ZHH2MY",
+        "text": "是一样的"
+      },
+      "search_log": {
+        "1": {
+          "candidate": "B0036SQCKK.jpg",
+          "result": [
+            "B0012GILRK.jpg",
+            "B0036SL1NI.jpg",
+            "B0035E4MC0.jpg",
+            "B0026GQET2.jpg",
+            "B0026GQEUQ.jpg",
+            "B000BWRD66.jpg",
+            "B0036XL6YW.jpg",
+            "B0036XQ53Y.jpg"
+          ],
+          "search_time": "2024-09-14 20:10:09",
+          "text": "是一样的"
+        },
+        "2": {
+          "candidate": "B0036SQCKK.jpg",
+          "result": [
+            "B0012GILRK.jpg",
+            "B0036SL1NI.jpg",
+            "B0036SJH16.jpg",
+            "B0036SSG2M.jpg",
+            "B000BWRD66.jpg",
+            "B0035E4MC0.jpg",
+            "B004VN5X72.jpg",
+            "B0026GSG0C.jpg"
+          ],
+          "search_time": "2024-09-14 20:10:17",
+          "text": "黑色"
+        },
+        "3": {
+          "candidate": "B00AZNVSVC.jpg",
+          "result": [
+            "B0048KTTLY.jpg",
+            "B0081D7EQQ.jpg",
+            "B007JWM08W.jpg",
+            "B004YO9P9K.jpg",
+            "B007U1U0WK.jpg",
+            "B0081D7IXK.jpg",
+            "B00914W4Z0.jpg",
+            "B00C1ES730.jpg"
+          ],
+          "search_time": "2024-09-14 20:08:56",
+          "text": "没有英文图案"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data": {
+        "reference_Image": "B0036SQCKK.jpg",
+        "candidate_success": "B0036SJH16.jpg",
+        "search_text": "黑色",
+        "success_time": "2024-09-14 20:10:20"
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+document.queryselector('button[name="withdraw"]').addeventlistener('click', () => {
+   fetch('/withdraw')
+     .then(response => response.json())
+     .then(data => {
+        const refimg = document.queryselector('img[name="ref-img"]');
+        refimg.src = data.last_image_path;
+      })
+     .catch(error => console.log(error));
+});
+
+</html>

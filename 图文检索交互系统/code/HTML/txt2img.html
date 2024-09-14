@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>图片搜索</title>
+
+</head>
+
+<body>
+
+<div name="input">
+    <div name="title">以文搜图</div>
+    <div name="search"><input type="text" id="search-term" name="q"></div>
+    <div><button name="search">搜索</button></div>
+    <div><button name="cancel">取消</button></div>
+
+  <div name='reference'><img id="myImg"  src="{{ url_init[0] }}" width="400" height="300"></div>
+  <div name='target'><img id="trgImg"  src="{{ url_init[1] }}" width="400" height="300"></div>
+  <div name="btn-refresh"><button name="refresh">刷新图片</button></div>
+</div>
+
+
+<div class="image-container">
+</div>
+
+</body>
+
+
+<script>
+    // 获取搜索按钮和刷新按钮
+    const searchBtn = document.querySelector('button[name="search"]');
+    const refreshBtn = document.querySelector('button[name="refresh"]');
+
+    // 给搜索按钮绑定点击事件处理函数
+    searchBtn.addEventListener('click', (event) => {
+      // 获取要搜索的图片的src属性
+      const imgSrc = document.getElementById('myImg').src;
+      const searchTerm = document.getElementById('search-term').value;
+      // 发送GET请求到指定路由
+      fetch(`http://10.200.99.0:5000/txt2img/search?imgSrc=${imgSrc}&searchText=${searchTerm}`)
+        .then((response) => response.json())
+        .then((data) => {
+          // 根据返回的图片地址列表创建img元素，并添加到image-container中
+          const imageContainer = document.querySelector('.image-container');
+          imageContainer.innerHTML = ''; // 先清空容器中的内容
+
+          for (let i = 0; i < data.length; i++) {
+            const img = document.createElement('img');
+            const div = document.createElement('div');  // todo:完善div图片属性
+            img.classList.add('image');
+            img.src = data[i];
+            img.alt = `image${i + 1}`;
+            div.appendChild(img)
+            imageContainer.appendChild(img);
+          }
+        })
+        .catch((error) => console.error(error));
+    });
+
+
+
+// 点击刷新按钮清空搜索结果并返回新的reference图片
+document.querySelector('button[name="refresh"]').addEventListener('click', function() {
+  const url = `/txt2img/refresh`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      const myImg = document.getElementById('myImg');
+      const trgImg = document.getElementById('trgImg');
+      myImg.src = data[0];
+      trgImg.src = data[1];
+
+      const imageContainer = document.querySelector('.image-container');
+      imageContainer.innerHTML = ''; // 先清空容器中的内容
+    })
+    .catch(error => console.error(error));
+});
+
+
+</script>
+
+
+</html>

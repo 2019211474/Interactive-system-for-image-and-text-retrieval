@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="zh-CN">
+
+  <head>
+    <meta charset="utf-8">
+    <title>我的网页 - HTMLPAGE.CN</title>
+    <link rel="shortcut icon" href="https://htmlpage.cn/favicon.png">
+    <link rel="stylesheet" href="../static/style_compare.css">
+  </head>
+
+  <body>
+
+    <body>
+      <div class="row" id="iaib">
+        <div id="idhg" class="cell c2162">
+          <div id="ixol" class="c2554">参考信息</div>
+            <div id="i5kdo" class="c5080">第<span id="exp_num">{{ index }}</span>组实验（共50组）</div>
+{#          <div id="i5kdo" class="c5080">第1组实验（共50组）</div>#}
+          <div class="row" id="iyqk">
+            <div id="imwq" class="cell c3123">
+              <div id="is6d" class="c3234" ><span>描述文本</span></div>
+            </div>
+            <div id="i80v" class="cell c3132">
+              <textarea class = "c3235" rows="3" value="{{ caption_value }}" placeholder="{{ caption_value }}"></textarea>
+            </div>
+          </div>
+          <div class="row" id="ifsgb">
+            <div id="itw4k" class="cell c3934">
+              <div id="izn5a" class="c4132">参考图片</div>
+            </div>
+            <div id="isg6y" class="cell c3943">
+                <img src={{ candidate_value }} class="c4468" />
+            </div>
+          </div>
+        </div>
+        <div id="iw2r" class="cell c2171">
+          <div id="i97ap" class="c6477">请选择你认为最符合描述的图片</div>
+          <div class="row" id="ih82l">
+            <div class="cell"><img src="{{ target_random_value1 }}" class="c5500" /></div>
+            <div class="cell"><img src="{{ target_random_value2 }}" class="c5669" /></div>
+          </div>
+          <div class="row" id="i2i3z">
+            <div class="cell" id="in9r5">
+              <button id="imxus" class="c7321 cell">上一组实验</button>
+           </div>
+            <div class="row" id="i2i3p">
+            <div class="cell" id="in9r6">
+              <button id="imxuz" class="c7322 cell">下一组实验</button>
+         </div>
+           </div>
+            <div class="cell">
+              <button id="i8mmf" class="c7483 cell">完成实验</button>
+            </div>
+          </div>
+
+          </div>
+        </div>
+      </div>
+    </body>
+  </body>
+  <html>
+  <script>
+      // 图片选中特效实现
+    const container = document.querySelector(".row");
+    let activeImage;
+    container.addEventListener("mousedown", function(event) {
+  // 检查点击的元素是否是img标签
+  if (event.target.tagName === "IMG") {
+    event.preventDefault();
+    if (activeImage === event.target) { // 如果再次点击了已经激活的图片
+      activeImage.classList.remove("active"); // 取消“active”类
+      activeImage = null; // 清空活动图片变量
+    } else {
+      if (activeImage) { // 如果已有激活的图片
+        activeImage.classList.remove("active"); // 取消“active”类
+      }
+      activeImage = event.target;
+      activeImage.classList.add("active");
+    }
+  }
+});
+
+    // 文本框内容初始化
+      document.addEventListener("DOMContentLoaded", function(event) {
+      const textarea = document.querySelector(".c3235");
+      const caption_value = "{{ caption_value }}";
+      textarea.value = caption_value;
+});
+    // 点击“下一组按钮”按钮或者“确定选择”按钮时触发的函数
+     document.getElementById('imxuz').addEventListener('click', handclick)
+     document.getElementById('i8mmf').addEventListener('click', handclick)
+      // 输出格式化后的字符串
+
+      function handclick(){
+     //获取用户的点击时间
+     const currentTime = new Date().getTime(); // 获取当前时间戳
+     const dateObj = new Date(currentTime); // 使用时间戳创建 Date 对象
+     const year = dateObj.getFullYear(); // 年
+     const month = (dateObj.getMonth() + 1).toString().padStart(2, '0'); // 月（注意要加 1）
+     const day = dateObj.getDate().toString().padStart(2, '0'); // 日
+     const hours = dateObj.getHours().toString().padStart(2, '0'); // 小时
+     const minutes = dateObj.getMinutes().toString().padStart(2, '0'); // 分钟
+     const seconds = dateObj.getSeconds().toString().padStart(2, '0'); // 秒
+     const dateString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`; // 格式化日期字符串
+     //console.log(dateString);
+    // 构造POST请求数据
+    const requestData = {
+        "currentTime": dateString,
+        "caption_value": document.querySelector(".c3235").value,
+        "candidate_value": document.querySelector(".c4468").src,
+        "c5500_url": document.querySelector(".c5500").src,
+        "c5669_url": document.querySelector(".c5669").src,
+        "index" : document.getElementById('exp_num').textContent,
+        "activeImage": document.querySelector(".active").src
+    };
+    //通过json更新
+     console.log(requestData["index"])
+    // 发送POST请求
+    fetch('/user_operation', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(requestData)
+    })
+    .then(response => response.json())
+    .then(data =>{ console.log(data)
+      // 在页面中更新元素
+      document.getElementById('exp_num').textContent = data.index;
+      document.querySelector('.c3235').value = data.caption_value;
+      document.querySelector('.c4468').src = data.candidate_value;
+      document.querySelector('.c5500').src = data.target_random_value1;
+      document.querySelector('.c5669').src = data.target_random_value2;
+      const activeImage = document.querySelector(".active");
+        if (activeImage) {
+          activeImage.classList.remove('active'); // 取消“active”类
+        }
+   })
+
+    .catch(error => console.error('Error:', error));
+};
+
+      // 获取页面中的 exp_num 元素
+    const expNumElement = document.getElementById('exp_num');
+    // 获取上一组按钮元素
+    const lastBtn = document.getElementById('imxus');
+
+    // 绑定上一组按钮的点击事件
+    lastBtn.addEventListener('click', () => {
+    // 发送 POST 请求
+    fetch('/last_experiment', {
+        method: 'POST',
+        headers: {
+         'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({index: expNumElement.textContent})
+    })
+  .then(response => response.json())  // 解析响应数据
+  .then(data => {console.log(data)
+    document.getElementById('exp_num').textContent = data.index;
+    document.querySelector('.c3235').value = data.description;
+    document.querySelector('.c4468').src = data.image_url;
+    document.querySelector('.c5500').src = data.c5500_url;
+    document.querySelector('.c5669').src = data.c5669_url;
+
+  }) // 输出响应数据
+  .catch(error => console.error(error));  // 处理异常情况
+});
+
+
+</script>

@@ -1,0 +1,173 @@
+{
+  "3": {
+    "1": {
+      "initial_data_img": {
+        "candidate": "B00383INJQ.jpg",
+        "start_time": "2024-09-14 20:06:05",
+        "target": "B0037OJRTQ.jpg"
+      },
+      "search_log_img": {
+        "1": {
+          "candidate": "B00383INJQ.jpg",
+          "result": [
+            "B0037OG22G.jpg",
+            "B0037OJRTQ.jpg",
+            "B008C9E5Q6.jpg",
+            "B002OPYHN0.jpg",
+            "B003ULO0BQ.jpg",
+            "B00AWAXKGY.jpg",
+            "B003J8KZ6Y.jpg",
+            "B002BF8HCU.jpg"
+          ],
+          "search_time": "2024-09-14 20:01:24",
+          "text": "颜色为红色并系纽扣"
+        },
+        "2": {
+          "candidate": "B00383INJQ.jpg",
+          "result": [
+            "B003HEYHV4.jpg",
+            "B0037NYUOO.jpg",
+            "B000MWXV16.jpg",
+            "B001MG3JEU.jpg",
+            "B006ZKIJI4.jpg",
+            "B007NLR82M.jpg",
+            "B004UTATIU.jpg",
+            "B004BGVRLU.jpg"
+          ],
+          "search_time": "2024-09-14 20:03:51"
+        },
+        "3": {
+          "candidate": "B00383INJQ.jpg",
+          "result": [
+            "B003HEYHV4.jpg",
+            "B0037NYUOO.jpg",
+            "B000MWXV16.jpg",
+            "B001MG3JEU.jpg",
+            "B006ZKIJI4.jpg",
+            "B007NLR82M.jpg",
+            "B004UTATIU.jpg",
+            "B004BGVRLU.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:08"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data_img": {
+        "referenceImage_fail_img": "B00383INJQ.jpg",
+        "targetImage_fail_img": "B0037OJRTQ.jpg",
+        "fail_time_img": "2024-09-14 20:06:29"
+      }
+    },
+    "2": {
+      "initial_data_img": {
+        "candidate": "B00383INJQ.jpg",
+        "start_time": "2024-09-14 20:06:05",
+        "target": "B0037OJRTQ.jpg"
+      },
+      "search_log_img": {
+        "1": {
+          "candidate": "B00BGLZK2K.jpg",
+          "result": [
+            "B00DPQ8FX0.jpg",
+            "B004SUGI2C.jpg",
+            "B00A3F9FI0.jpg",
+            "B005JZYEMG.jpg",
+            "B007HKOJIK.jpg",
+            "B0094AFNBI.jpg",
+            "B0057V26MC.jpg",
+            "B00EIR8QRA.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:31"
+        },
+        "2": {
+          "candidate": "B00EIR8QRA.jpg",
+          "result": [
+            "B00CAIBLU8.jpg",
+            "B0086VQD74.jpg",
+            "B0064VHQT2.jpg",
+            "B0064D7NQ6.jpg",
+            "B00AW5OAKY.jpg",
+            "B007907DJK.jpg",
+            "B004NG9VUW.jpg",
+            "B0049EOC4S.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:44"
+        },
+        "3": {
+          "candidate": "B0064VHQT2.jpg",
+          "result": [
+            "B00CAI85TS.jpg",
+            "B0086VQD74.jpg",
+            "B0064D7NQ6.jpg",
+            "B0003216GM.jpg",
+            "B003EMCY5U.jpg",
+            "B0049EOC4S.jpg",
+            "B003FMUDSE.jpg",
+            "B009ZAHUOA.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:50"
+        },
+        "4": {
+          "candidate": "B003HEYHV4.jpg",
+          "result": [
+            "B003LLX3MW.jpg",
+            "B000MWXV16.jpg",
+            "B000CEQKNK.jpg",
+            "B0036V5NZ2.jpg",
+            "B0037SO12K.jpg",
+            "B000CEQKMG.jpg",
+            "B000NBOIZE.jpg",
+            "B000G0EL9K.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:15"
+        },
+        "5": {
+          "candidate": "B0036V5NZ2.jpg",
+          "result": [
+            "B0037SO12K.jpg",
+            "B000OFJPFW.jpg",
+            "B000I7OUQ0.jpg",
+            "B0078VA144.jpg",
+            "B0037AGCLQ.jpg",
+            "B003HEYHV4.jpg",
+            "B000CEQKNK.jpg",
+            "B0077SXO74.jpg"
+          ],
+          "search_time": "2024-09-14 20:06:27"
+        }
+      },
+      "end_data_img": {
+        "referenceImage_fail_img": "B00383INJQ.jpg",
+        "targetImage_fail_img": "B0037OJRTQ.jpg",
+        "fail_time_img": "2024-09-14 20:06:52"
+      }
+    }
+  }
+}

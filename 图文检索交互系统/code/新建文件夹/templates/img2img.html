@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>图片搜索</title>
+
+  </head>
+  <body>
+  <h1>图片搜索</h1>
+    <div class="search-container">
+
+        <div>
+    <img id="myImg" src="{{ url_init[0] }}" width="400" height="300">
+    <br>
+  </div>
+
+<div class="button-group">
+    <button name="refresh">刷新</button>
+    <button name="search">搜索</button>
+</div>
+
+    </div>
+
+<div class="image-container">
+
+</div>
+
+
+  </body>
+
+
+<script>
+    // 获取搜索按钮和刷新按钮
+    const searchBtn = document.querySelector('button[name="search"]');
+    const refreshBtn = document.querySelector('button[name="refresh"]');
+    // 获取所有的图片元素
+    const images = document.querySelectorAll('.image');
+    const myImg = document.getElementById('myImg');
+    const imageContainer = document.querySelector('.image-container');
+
+    // 给搜索按钮绑定点击事件处理函数
+    searchBtn.addEventListener('click', (event) => {
+      event.preventDefault();
+
+
+      // 获取要搜索的图片的src属性
+      const imgSrc = document.getElementById('myImg').src;
+      // 发送GET请求到指定路由
+      fetch(`http://10.200.99.0:5000/img2img/search?imgSrc=${imgSrc}`)
+        .then((response) => response.json())
+        .then((data) => {
+          // 根据返回的图片地址列表创建img元素，并添加到image-container中
+          const imageContainer = document.querySelector('.image-container');
+          imageContainer.innerHTML = ''; // 先清空容器中的内容
+
+          for (let i = 0; i < data.length; i++) {
+            const img = document.createElement('img');
+            img.classList.add('image');
+            img.src = data[i];
+            img.alt = `image${i + 1}`;
+            imageContainer.appendChild(img);
+            img.addEventListener('click', () => {
+                    // When an image is clicked, set its src as the new src for myImg
+                    myImg.src = img.src;
+                    imageContainer.innerHTML = ''; // 先清空容器中的内容
+                  });
+          }
+
+
+        })
+        .catch((error) => console.error(error));
+    });
+
+
+// 点击刷新按钮清空搜索结果并返回新的reference图片
+document.querySelector('button[name="refresh"]').addEventListener('click', function() {
+  const url = `http://10.200.77.144:8080/img2img/refresh`;
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      myImg.src = data[0];
+      const images = document.querySelectorAll('.image-container .image');
+      images.forEach(image => image.src = '');
+      document.querySelector('.image-container').innerHTML = data.slice(1).map(url => `<img class="image" src="${url}" alt="">`).join('');
+    })
+    .catch(error => console.error(error));
+
+});
+
+
+
+
+
+
+</script>
+
+</html>
